@@ -1,0 +1,3 @@
+MYVAR=test
+
+echo $MYVAR
