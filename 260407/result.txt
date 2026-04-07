@@ -1,0 +1,6 @@
+== 1.txt ==========================================
+Das ist der Inhalt der ersten Datei
+== 2.txt ==========================================
+Das ist der Inhalt der zweiten Datei
+== 3.txt ==========================================
+Das ist der Inhalt der dritten Datei
