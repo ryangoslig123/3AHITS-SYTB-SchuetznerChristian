@@ -1,0 +1,1 @@
+test -d "$DIR" && { echo "Verzeichnis existiert bereits"; ls -l "$DIR"; } || mkdir "$DIR"

@@ -1,0 +1,1 @@
+test "$(ls -l "$1" | tr -s ' ' | cut -d ' ' -f 5)" -gt 10 && echo "Datei ist zu groß" || echo "Groesse OK"
