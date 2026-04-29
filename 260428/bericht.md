@@ -35,6 +35,6 @@ test "$DAY" = "Wednesday" && echo "D AM NWT NWT R E1 - SYTB GGPW AM"
 test "$DAY" = "Thursday" && echo "NW2P AM SYTE ITP2 BESP BESP"
 test "$DAY" = "Friday" && echo "MEDT ITP2MG R ITSE MEDT MEDT"
 ```
-Zuerst wird der Wochentag mit date +%A in eine Variable gespeichert, mid der nachher für jeden Wochentag geprüft wird und der entsprechende Stundeplan ausgegeben wird.
+Zuerst wird der Wochentag mit date +%A in eine Variable gespeichert, mit der nachher für jeden Wochentag geprüft wird und der entsprechende Stundeplan ausgegeben wird.
 
 # HTML Generator
