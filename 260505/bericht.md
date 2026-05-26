@@ -77,3 +77,4 @@ read info: https://www.howtoforge.de/anleitung/der-linux-read-command/
 filecount: https://dev.to/ibrahimalanshor/2-ways-to-count-files-in-a-linux-directory-using-bash-7a7  
 ![alt text](image.png)
   
+In dem Screenshot habe ich im bereits erstellten xyz Ordner zwei zusätzliche Textdateien erstellt, die beim erneutem Aufruf des Scripts gelöscht wurden. (oben sieht man 1.txt und 2.txt rot markiert). Der Ordner wird allerdings nie komplett gelöscht, da direkt danach im letzen Codeblock des Scripts der Ordner erstellt wird mit der Datei.
