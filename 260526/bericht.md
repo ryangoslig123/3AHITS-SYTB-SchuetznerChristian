@@ -23,6 +23,18 @@ Regular Expressions werden verwendet, um bestimmte Strings zu suchen, zu filtern
 
 - `{}` bei `a{3}` wird nach 3x a gesucht 
 
+- `^` kennzeichnet den Anfang eines Strings oder einer Zeile. (Innerhalb von eckigen Klammern [^...] bedeutet es "nicht", also alles außer)
+
+- `$` kennzeichnet das Ende eines Strings oder einer Zeile
+
+- `*` steht für 0 oder mehr Wiederholungen des vorhergehenden Zeichens
+
+- `+` steht für 0 oder mehr Wiederholungen des vorhergehenden Zeichens (mindestens einmal)
+
+- `?` steht für 0 oder 1 Wiederholungen des vorhergehenden Zeichens (macht es quasi optional)
+
+
+
 # RegexOne
 
 **Lesson 1**: abc
