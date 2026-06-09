@@ -69,3 +69,11 @@ Regular Expressions werden verwendet, um bestimmte Strings zu suchen, zu filtern
 
 # Übung (REs)
 
++*$?
+
+a+ 1-n mal
+a= 0,1 mal
+
+\1 backreference
+
+() - syntaktische gruppe
