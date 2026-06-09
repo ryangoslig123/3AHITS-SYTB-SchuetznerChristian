@@ -62,9 +62,14 @@ Die erste matched alles nach configure und -v steht für inverse, also alles au�
 
 `|` oder Verknüpfung  
 
-´sed -E 's/[0-9]{2}:[0-9]{2}:[0-9]{2} //' logfile.txt`
+`sed -E 's/[0-9]{2}:[0-9]{2}:[0-9]{2} //' logfile.txt`
 
-3 Zahlen vor 0-9 der Länge 2 mit : dazwischen werden gematched.
+3 Zahlen von 0-9 der Länge 2 mit : dazwischen werden gelöscht.
 
 `sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2} //' logfile.txt`
 
+Das Jahr wird gelöscht.
+
+`sed -E 's/^([0-9]{4})-([0-9]{2})-([0-9]{2})/\3.\2.\1/' logfile.txt`
+
+Es werden wieder drei Gruppen erfasst, und nachher vertauscht (Reihenfolge 3 2 1 statt 1 2 3, 1=Jahr 2=Monat 3=Tag).
