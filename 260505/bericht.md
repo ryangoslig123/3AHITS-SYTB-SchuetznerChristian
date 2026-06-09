@@ -73,7 +73,7 @@ echo "$DIR" > "$DIR/$DIR.txt" #Textdatei mit parameter
 ```
 Wichtig ist innerhalb den eckigen Klammern eine Leerzeile Abstand zu lassen. Ebenfalls muss elif verwendet werden, man kann nicht else if oder elseif schreiben.  
 
-read info: https://www.howtoforge.de/anleitung/der-linux-read-command/  
+read info: https://www.howtoforge.de/anleitung/der-linux-read-command/
 filecount: https://dev.to/ibrahimalanshor/2-ways-to-count-files-in-a-linux-directory-using-bash-7a7  
 ![alt text](image.png)
   
