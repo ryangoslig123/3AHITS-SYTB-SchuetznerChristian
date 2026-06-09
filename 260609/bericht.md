@@ -16,7 +16,7 @@ Teil 1 mit den ersten zwei Aufgaben + Theorie findest du hier: https://ryangosli
 Diese Expression matched einen String nach dem Format einer E-Mail. ^ kennzeichnet den Anfang eines Strings. a-zA-Z0-9 matched das ganze Alphabet und alle Zahlen. `_.+-` ist auch erlaubt. Danach endet die erste Zeichenklasse und es muss zwingend `@` vorkommen. Bei der zweiten Zeichenklassse, also alles nach dem @, darf kein +_. mehr vorkommen, sondern nur mehr -. Nach der zweiten Zeichenklasse muss zwingend ein . kommen, und nach der dritten Zeichenklasse wird mit $ das Ende des Strings gekennzeichnet.
 
 String 1: `christian@schuetzner.org`  
-String 2: `christian+-..__@schuetzner.org`
+String 2: `christian+-..__@schuetzner.org`  
 String 3: `htl______braunau...@htl------braunau.at`  
 String 4: `a@b.c`  
 String 5: `10.0.0.1@255.255.255.0.at`  
