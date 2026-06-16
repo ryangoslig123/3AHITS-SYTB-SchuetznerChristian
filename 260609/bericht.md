@@ -16,7 +16,7 @@ Teil 1 mit den ersten zwei Aufgaben + Theorie findest du hier: https://ryangosli
 Diese Expression matched einen String nach dem Format einer E-Mail. ^ kennzeichnet den Anfang eines Strings. a-zA-Z0-9 matched das ganze Alphabet und alle Zahlen. `_.+-` ist auch erlaubt. Danach endet die erste Zeichenklasse und es muss zwingend `@` vorkommen. Bei der zweiten Zeichenklassse, also alles nach dem @, darf kein +_. mehr vorkommen, sondern nur mehr -. Nach der zweiten Zeichenklasse muss zwingend ein . kommen, und nach der dritten Zeichenklasse wird mit $ das Ende des Strings gekennzeichnet.
 
 String 1: `christian@schuetzner.org`  
-String 2: `christian+-..__@schuetzner.org`
+String 2: `christian+-..__@schuetzner.org`  
 String 3: `htl______braunau...@htl------braunau.at`  
 String 4: `a@b.c`  
 String 5: `10.0.0.1@255.255.255.0.at`  
@@ -62,9 +62,14 @@ Die erste matched alles nach configure und -v steht für inverse, also alles au�
 
 `|` oder Verknüpfung  
 
-´sed -E 's/[0-9]{2}:[0-9]{2}:[0-9]{2} //' logfile.txt`
+`sed -E 's/[0-9]{2}:[0-9]{2}:[0-9]{2} //' logfile.txt`
 
-3 Zahlen vor 0-9 der Länge 2 mit : dazwischen werden gematched.
+3 Zahlen von 0-9 der Länge 2 mit : dazwischen werden gelöscht.
 
 `sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2} //' logfile.txt`
 
+Das Jahr wird gelöscht.
+
+`sed -E 's/^([0-9]{4})-([0-9]{2})-([0-9]{2})/\3.\2.\1/' logfile.txt`
+
+Es werden wieder drei Gruppen erfasst, und nachher vertauscht (Reihenfolge 3 2 1 statt 1 2 3, 1=Jahr 2=Monat 3=Tag).
